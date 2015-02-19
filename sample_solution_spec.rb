@@ -20,7 +20,7 @@ end
 describe "StringCalculator.add" do 
   #1) The method can take 0, 1 or 2 numbers, and will return their sum (for an empty string it will return 0) for example '' or '1' or '1,2' 
   it "returns 0 if nothing is passed - e.g. 0 for nil" do 
-    StringCalculator.add.should == 0 
+    StringCalculator.add.expect == 0 
   end 
   it "returns 0 if an empty string is passed - e.g. 0 for ''" do 
     StringCalculator.add('').should == 0 
